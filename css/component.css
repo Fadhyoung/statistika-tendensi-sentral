@@ -1,0 +1,74 @@
+.navbar {
+    width: 100%;
+    background-color: red;
+    display: flex; justify-content: center;
+    padding: 20px;
+    background-image: linear-gradient(#f7ffaa, rgb(245, 245, 255));
+}
+
+.navbar-img {width: 10%; }
+
+.navbar-img img {
+    height: 100%; width: 100%;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 { font-family: Norwester; font-size: 70px; font-weight: 900;}
+.title p { font-family: Kollektif; font-size: 14px; font-weight: 200; }
+
+.work-container {
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+.data-container, .result-container {
+    border: 1px solid #d4d4ff; text-align: center; height: 100px;
+    border-radius: 10px; position: relative;
+}
+
+.data-container { width: 25%; }
+.result-container { width: 70%;}
+
+.card-title {
+    position: absolute; background-color: #9292dd; width: 100%; border-radius: 10px;
+    color: white; font-weight: 200; padding: 5px;
+}
+
+.button-operation-container {
+    width: 100%; display: flex; justify-content: space-between;
+    margin: auto;
+}
+
+button { background-color: #d4d4ff; padding: 5px 80px; border: none; border-radius: 10px; font-size: large;}
+
+.desc-container {
+    text-align: center; font-size: small;
+}
+
+.footer {
+    background-color: #9292dd; padding: 20px; border-radius: 10px; height: 180px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    position: relative;
+}
+
+.footer-menu {
+    width: 30%; display: flex; justify-content: space-around; margin: 0 auto; 
+}
+
+.footer-menu div {
+    width: 25%; height: 10px; background-color: #f7ffaa; border-radius: 5px;
+}
+
+.footer-title {}
+.footer-title p { color: white; margin-top: 5px; }
+
+.footer-end {
+    color: white; font-size: small; font-weight: 100;
+}
+
+.card-footer {
+    position: absolute; background-color: #d4d4ff; width: 50px; height: 50px; border-radius: 5px;
+    bottom: 20px; right: 20px;
+}
