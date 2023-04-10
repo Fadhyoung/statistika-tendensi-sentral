@@ -28,3 +28,20 @@ function median(){
     }
 
 }
+
+function mean() {
+    var data = document.getElementById("input-data").value;
+
+    var data = data.split(",");
+
+    var dataLen = data.length;
+
+    let dataSum = 0;
+    data.forEach(element => {
+        dataSum = dataSum + parseInt(element);
+    });
+
+    var mean = dataSum / dataLen;
+    document.getElementById("result").innerHTML = mean;
+
+}
