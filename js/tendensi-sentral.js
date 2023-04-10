@@ -2,6 +2,9 @@
 var data;
 
 function median(){
+
+    document.getElementById("result").innerHTML = "";
+
     var data = document.getElementById("input-data").value;
 
     // mengubah text ke array dengan delimiter ,
@@ -30,6 +33,7 @@ function median(){
 }
 
 function mean() {
+
     var data = document.getElementById("input-data").value;
 
     var data = data.split(",");
@@ -44,4 +48,45 @@ function mean() {
     var mean = dataSum / dataLen;
     document.getElementById("result").innerHTML = mean;
 
+}
+
+function modus() {
+
+    var data = document.getElementById("input-data").value;
+
+    var data = data.split(",");
+
+    // definite a single value
+    var dataVal = [];
+    let index = "a";
+    data.forEach(element => {
+        if (index !== element) {
+            dataVal.push(element)
+            index = element;
+        } else {
+            index = element;
+        }
+    });
+
+    // search modus data
+    var tempData = [];
+    var tempDataLen = 0;
+    var modusData = 0;
+    var modusVal = 0;
+    dataVal.forEach(x => {
+        data.forEach(y=> {
+            if (x == y) {
+                tempData.push(x);
+            }
+        })
+        tempDataLen = tempData.length;
+        if (tempDataLen > modusData) {
+            modusData = tempData.length;
+            modusVal = tempData[0];
+        }
+
+        tempData = [];
+    })
+
+    document.getElementById("result").innerHTML = modusVal;
 }

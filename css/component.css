@@ -41,7 +41,10 @@
     margin: auto;
 }
 
-button { background-color: #d4d4ff; padding: 5px 80px; border: none; border-radius: 10px; font-size: large;}
+button { 
+    background-color: #d4d4ff; padding: 5px 80px; border: none; border-radius: 10px; font-size: large;
+    cursor: pointer; font-weight: 500;
+}
 
 .desc-container {
     text-align: center; font-size: small;
@@ -90,8 +93,6 @@ input {
 input:focus {
     outline: none;
 }
-
-button { cursor: pointer; }
 
 button:hover {
     box-shadow: 5px 5px 5px rgb(238, 238, 238);
