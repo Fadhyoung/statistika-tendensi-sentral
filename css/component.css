@@ -32,8 +32,8 @@
 .result-container { width: 70%;}
 
 .card-title {
-    position: absolute; background-color: #9292dd; width: 100%; border-radius: 10px;
-    color: white; font-weight: 200; padding: 5px;
+    position: relative; background-color: #9292dd; width: 100%; border-radius: 10px;
+    color: white; font-weight: 200; padding: 5px; height: 25%;
 }
 
 .button-operation-container {
@@ -71,4 +71,11 @@ button { background-color: #d4d4ff; padding: 5px 80px; border: none; border-radi
 .card-footer {
     position: absolute; background-color: #d4d4ff; width: 50px; height: 50px; border-radius: 5px;
     bottom: 20px; right: 20px;
+}
+
+/* ====================================================================================================================================== */
+
+input {
+    background-color: #f5f5ff;
+    border: none; width: 100%; height: 75%;
 }

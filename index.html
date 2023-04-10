@@ -15,6 +15,7 @@
         <div class="navbar-img"><img src="img/FullLogo.png" alt=""></div>
     </div>
 
+
     <br><br><br><br>
 
     <div class="content-container">
@@ -30,21 +31,23 @@
 
             <div class="data-container">
                 <div class="card-title">DATA</div>
-                <div class="card-content"></div>
+                <input class="input-data" id="input-data" type="text">
             </div>
 
             <div class="result-container">
                 <div class="card-title">RESULT</div>
-                <div class="card-content"></div>
+                <div class="result" id="result"></div>
             </div>
 
         </div>
+
+        
 
         <br>
 
         <div class="button-operation-container">
 
-            <button>MEDIAN</button>
+            <button onclick="median()">MEDIAN</button>
             <button>MEAN</button>
             <button>MODUS</button>
 
@@ -83,6 +86,8 @@
         </div>
 
     </div>
+
+    <script src="js/tendensi-sentral.js"></script>
     
 </body>
 </html>
