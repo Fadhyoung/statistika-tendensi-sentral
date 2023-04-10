@@ -19,7 +19,8 @@ function median(){
 
     if (listLen % 2){
         // apabila panjang array dimodulus 2, maka nilai tengah langsung dapat diketahui, atau median terdapat dalam value dalam array tersebut
-        alert( sortedLst[index]  ) 
+        result = ( sortedLst[index]  ) 
+        document.getElementById("result").innerHTML = result;
     } else {
         // mendapatkan batas atas dan bawah dari nilai tengah, kemudian dijumlahkan lalu dibagi 2
         var result = ( ( parseInt(sortedLst[index])  + parseInt(sortedLst[index + 1])) /2 ) 
